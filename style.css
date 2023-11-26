@@ -1,0 +1,52 @@
+nav.custom-nav {
+  background: #023047;
+  display: flex;
+  margin: 32px;
+  width: 360px;
+  box-shadow: 0 3px 50px -8px rgba(0, 0, 0, 0.3);
+  padding: 8px 24px;
+}
+
+.menu-text {
+  color: #fff;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-text .text-container,
+.menu-text .text-container-copy {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-text .text-container span {
+  transition: all 700ms ease;
+}
+
+.menu-text:hover .text-container span {
+  transform: translateY(-30px) rotateX(180deg);
+  opacity: 0;
+}
+
+.menu-text .text-container-copy {
+  transform: translateY(19px);
+  color: yellow;
+}
+
+.menu-text .text-container-copy span {
+  transform: translateY(0px) rotateX(-180deg);
+  opacity: 0;
+  transition: all 700ms ease;
+}
+
+.menu-text:hover .text-container-copy span {
+  transform: translateY(-30px) rotateX(0deg);
+  opacity: 1;
+}
